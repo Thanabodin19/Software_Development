@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const CustomerSchema = mongoose.Schema(
     {
         CustomerId: Number,
-        Fullname:   String,
+        FullName:   String,
         Address:    String
     },
     {

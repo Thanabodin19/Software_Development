@@ -1,0 +1,26 @@
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/api/customer
+###
+GET http://localhost:3000/api/customer/63b4f89b8b2a91e5481dcab9
+###
+POST http://localhost:3000/api/customer HTTP/1.1
+Content-Type: application/json
+
+{
+    "CustomerId": 1004,
+    "FullName": "Maru",
+    "Address": "Japan"
+}
+###
+PUT http://localhost:3000/api/customer/63b4f89b8b2a91e5481dcab9 HTTP/1.1
+Content-Type: application/json
+
+{
+    "CustomerId": 1001,
+    "FullName": "Bank",
+    "Address": "Pathumthani"
+}
+###
+DELETE http://localhost:3000/api/customer/63b4fb0c8b2a91e5481dcadf HTTP/1.1
